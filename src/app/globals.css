@@ -1,0 +1,76 @@
+@import "animate.css";
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-geist-sans), sans-serif;
+}
+
+/* Gradient text with glow */
+.gradient-glow-text {
+  background: linear-gradient(90deg, #22d3ee, #ec4899, #f97316); /* bg-gradient-to-r from-cyan-400 via-pink-500 to-orange-500 */
+  -webkit-background-clip: text;
+  background-clip: text; /* Added for compatibility */
+  -webkit-text-fill-color: transparent;
+  text-shadow:
+    0 0 8px rgba(236, 72, 153, 0.7), /* pink-500 */
+    0 0 15px rgba(34, 211, 238, 0.7); /* cyan-400 */
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    text-shadow:
+      0 0 8px rgba(236, 72, 153, 0.7), /* pink-500 */
+      0 0 15px rgba(34, 211, 238, 0.7); /* cyan-400 */
+  }
+  50% {
+    text-shadow:
+      0 0 12px rgba(236, 72, 153, 1), /* pink-500 */
+      0 0 20px rgba(34, 211, 238, 1); /* cyan-400 */
+  }
+}
+
+.gradient-glow-text {
+  background: linear-gradient(90deg, #22d3ee, #ec4899, #f97316); /* bg-gradient-to-r from-cyan-400 via-pink-500 to-orange-500 */
+  -webkit-background-clip: text;
+  background-clip: text; /* Added for compatibility */
+  -webkit-text-fill-color: transparent;
+  text-shadow:
+    0 0 8px rgba(236, 72, 153, 0.7), /* pink-500 */
+    0 0 15px rgba(34, 211, 238, 0.7); /* cyan-400 */
+  animation: pulse-glow 2s infinite alternate; /* Apply the animation */
+}
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeInDown {
+  animation: fadeInDown 0.4s ease-out forwards;
+}

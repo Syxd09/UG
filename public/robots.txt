@@ -1,0 +1,9 @@
+# robots.txt file for Ultimate Graphics India website
+# This file tells search engine crawlers which pages they can access.
+
+User-agent: *
+# Allow all user agents to crawl the entire site
+Allow: /
+
+# Specify the location of the sitemap file
+Sitemap: https://ultimategraphicsindia.in/sitemap.xml
