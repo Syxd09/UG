@@ -162,7 +162,7 @@ export default function About() {{
               />
             </div>
             <p className="text-sm text-gray-300 mb-4">
-              Reshaping your brand's identity with custom signage solutions.
+              Reshaping your brand&rsquo;s identity with custom signage solutions.
             </p>
 
             <p className="text-sm text-gray-400 mb-4">

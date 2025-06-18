@@ -161,7 +161,7 @@ export default function ContactUs() {
         <div className="about-container bg-gradient-to-r from-cyan-400 via-pink-500 to-orange-500 text-white text-center py-20 animate__animated animate__fadeInDown">
           <h1 className="text-7xl mt-2 p-6 font-bold mb-4">Contact us</h1>
           <p className="text-lg animate__animated animate__fadeInUp animate__delay-1s">
-            we'd love to hear from you!
+            we&rsquo;d love to hear from you!
           </p>
         </div>
       </div>
@@ -178,10 +178,10 @@ export default function ContactUs() {
           <div className="text-left space-y-10">
             <div>
               <h2 className="text-5xl font-extrabold uppercase tracking-wide font-sans gradient-glow-text animate-pulseSlow">
-                Let's Talk
+                Let&rsquo;s Talk
               </h2>
               <p className="text-gray-600 text-lg">
-                We'd love to hear your feedback or answer any questions you may
+                We&rsquo;d love to hear your feedback or answer any questions you may
                 have.
               </p>
             </div>
@@ -413,7 +413,7 @@ export default function ContactUs() {
               />
             </div>
             <p className="text-sm text-gray-300 mb-4">
-              Reshaping your brand's identity with custom signage solutions.
+              Reshaping your brand&rsquo;s identity with custom signage solutions.
             </p>
 
             <p className="text-sm text-gray-400 mb-4">
@@ -554,7 +554,7 @@ export default function ContactUs() {
 }
 
 function Toast({ message, type }: { message: string; type: "success" | "error" | "" }) {
-  if (!message) return null; // Don't render if no message
+  if (!message) return null; // Don&rsquo;t render if no message
 
   return (
     <div
