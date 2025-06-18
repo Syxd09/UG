@@ -1,5 +1,3 @@
-<img src="https://r2cdn.perplexity.ai/pplx-full-logo-primary-dark%402x.png" class="logo" width="120"/>
-
 # Ultimate Graphics India Website
 
 Welcome to the official repository for the Ultimate Graphics India website—a modern, high-performance web application designed to showcase our creative services, portfolio, and provide seamless communication channels for clients and prospects alike.
