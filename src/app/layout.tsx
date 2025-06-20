@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     siteName: "Ultimate Graphics India",
     images: [
       {
-        url: "https://ultimategraphicsindia.in/images/ultimate-graphics-showcase.jpg",
+        url: "public/ug-logo.png",
         width: 1200,
         height: 630,
         alt: "Ultimate Graphics Bangalore - Custom Signage and LED Signs Display",
