@@ -8,7 +8,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 const services = [
-  { title: "Building Signs", image: "/services/building-signs.jpg" },
+  { title: "Building Signs", image: "/public/IMG-20250520-WA0004.jpg" },
   { title: "Cabinet Signs", image: "/services/cabinet-signs.jpg" },
   { title: "Counter Signs", image: "/services/counter-signs.jpg" },
   { title: "Custom Signs", image: "/services/custom-signs.jpg" },

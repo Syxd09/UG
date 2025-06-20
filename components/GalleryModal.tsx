@@ -42,35 +42,151 @@ export default function GalleryModal() {
       title: "Directional Board",
       description: "Elegant and functional directional signs.",
     },
-    { src: "/IMG-20250520-WA0005.jpg", title: "Gallery Image", description: "An image from the gallery." },
-    { src: "/IMG-20250520-WA0011.jpg", title: "Gallery Image", description: "An image from the gallery." },
-    { src: "/IMG-20250520-WA0012.jpg", title: "Gallery Image", description: "An image from the gallery." },
-    { src: "/IMG-20250520-WA0013.jpg", title: "Gallery Image", description: "An image from the gallery." },
-    { src: "/IMG-20250520-WA0014.jpg", title: "Gallery Image", description: "An image from the gallery." },
-    { src: "/IMG-20250520-WA0015.jpg", title: "Gallery Image", description: "An image from the gallery." },
-    { src: "/IMG-20250520-WA0016.jpg", title: "Gallery Image", description: "An image from the gallery." },
-    { src: "/IMG-20250520-WA0017.jpg", title: "Gallery Image", description: "An image from the gallery." },
-    { src: "/IMG-20250520-WA0019.jpg", title: "Gallery Image", description: "An image from the gallery." },
-    { src: "/IMG-20250520-WA0020.jpg", title: "Gallery Image", description: "An image from the gallery." },
-    { src: "/IMG-20250520-WA0021.jpg", title: "Gallery Image", description: "An image from the gallery." },
-    { src: "/IMG-20250520-WA0022.jpg", title: "Gallery Image", description: "An image from the gallery." },
-    { src: "/IMG-20250520-WA0024.jpg", title: "Gallery Image", description: "An image from the gallery." },
-    { src: "/IMG-20250531-WA0001.jpg", title: "Gallery Image", description: "An image from the gallery." },
-    { src: "/IMG-20250531-WA0002.jpg", title: "Gallery Image", description: "An image from the gallery." },
-    { src: "/IMG-20250531-WA0003.jpg", title: "Gallery Image", description: "An image from the gallery." },
-    { src: "/IMG-20250531-WA0005.jpg", title: "Gallery Image", description: "An image from the gallery." },
-    { src: "/IMG-20250531-WA0007.jpg", title: "Gallery Image", description: "An image from the gallery." },
-    { src: "/IMG-20250531-WA0008.jpg", title: "Gallery Image", description: "An image from the gallery." },
-    { src: "/IMG-20250531-WA0009.jpg", title: "Gallery Image", description: "An image from the gallery." },
-    { src: "/IMG-20250531-WA0010.jpg", title: "Gallery Image", description: "An image from the gallery." },
-    { src: "/IMG-20250531-WA0011.jpg", title: "Gallery Image", description: "An image from the gallery." },
-    { src: "/IMG-20250531-WA0013.jpg", title: "Gallery Image", description: "An image from the gallery." },
-    { src: "/IMG-20250531-WA0014.jpg", title: "Gallery Image", description: "An image from the gallery." },
-    { src: "/IMG-20250531-WA0015.jpg", title: "Gallery Image", description: "An image from the gallery." },
-    { src: "/IMG-20250531-WA0017.jpg", title: "Gallery Image", description: "An image from the gallery." },
-    { src: "/IMG-20250531-WA0018.jpg", title: "Gallery Image", description: "An image from the gallery." },
-    { src: "/IMG-20250531-WA0019.jpg", title: "Gallery Image", description: "An image from the gallery." },
-    { src: "/IMG-20250531-WA0020.jpg", title: "Gallery Image", description: "An image from the gallery." },
+    {
+      src: "/IMG-20250505-WA0005.jpg",
+      title: "Gallery Image",
+      description: "An image from the gallery.",
+    },
+    {
+      src: "/IMG-20250505-WA0011.jpg",
+      title: "Gallery Image",
+      description: "An image from the gallery.",
+    },
+    {
+      src: "/IMG-20250505-WA0012.jpg",
+      title: "Gallery Image",
+      description: "An image from the gallery.",
+    },
+    {
+      src: "/IMG-20250505-WA0013.jpg",
+      title: "Gallery Image",
+      description: "An image from the gallery.",
+    },
+    {
+      src: "/IMG-20250505-WA0014.jpg",
+      title: "Gallery Image",
+      description: "An image from the gallery.",
+    },
+    {
+      src: "/IMG-20250505-WA0015.jpg",
+      title: "Gallery Image",
+      description: "An image from the gallery.",
+    },
+    {
+      src: "/IMG-20250505-WA0016.jpg",
+      title: "Gallery Image",
+      description: "An image from the gallery.",
+    },
+    {
+      src: "/IMG-20250505-WA0017.jpg",
+      title: "Gallery Image",
+      description: "An image from the gallery.",
+    },
+    {
+      src: "/IMG-20250505-WA0019.jpg",
+      title: "Gallery Image",
+      description: "An image from the gallery.",
+    },
+    {
+      src: "/IMG-20250505-WA0020.jpg",
+      title: "Gallery Image",
+      description: "An image from the gallery.",
+    },
+    {
+      src: "/IMG-20250505-WA0021.jpg",
+      title: "Gallery Image",
+      description: "An image from the gallery.",
+    },
+    {
+      src: "/IMG-20250505-WA0022.jpg",
+      title: "Gallery Image",
+      description: "An image from the gallery.",
+    },
+    {
+      src: "/IMG-20250505-WA0024.jpg",
+      title: "Gallery Image",
+      description: "An image from the gallery.",
+    },
+    {
+      src: "/IMG-20250531-WA0001.jpg",
+      title: "Gallery Image",
+      description: "An image from the gallery.",
+    },
+    {
+      src: "/IMG-20250531-WA0002.jpg",
+      title: "Gallery Image",
+      description: "An image from the gallery.",
+    },
+    {
+      src: "/IMG-20250531-WA0003.jpg",
+      title: "Gallery Image",
+      description: "An image from the gallery.",
+    },
+    {
+      src: "/IMG-20250531-WA0005.jpg",
+      title: "Gallery Image",
+      description: "An image from the gallery.",
+    },
+    {
+      src: "/IMG-20250531-WA0007.jpg",
+      title: "Gallery Image",
+      description: "An image from the gallery.",
+    },
+    {
+      src: "/IMG-20250531-WA0008.jpg",
+      title: "Gallery Image",
+      description: "An image from the gallery.",
+    },
+    {
+      src: "/IMG-20250531-WA0009.jpg",
+      title: "Gallery Image",
+      description: "An image from the gallery.",
+    },
+    {
+      src: "/IMG-20250531-WA0010.jpg",
+      title: "Gallery Image",
+      description: "An image from the gallery.",
+    },
+    {
+      src: "/IMG-20250531-WA0011.jpg",
+      title: "Gallery Image",
+      description: "An image from the gallery.",
+    },
+    {
+      src: "/IMG-20250531-WA0013.jpg",
+      title: "Gallery Image",
+      description: "An image from the gallery.",
+    },
+    {
+      src: "/IMG-20250531-WA0014.jpg",
+      title: "Gallery Image",
+      description: "An image from the gallery.",
+    },
+    {
+      src: "/IMG-20250531-WA0015.jpg",
+      title: "Gallery Image",
+      description: "An image from the gallery.",
+    },
+    {
+      src: "/IMG-20250531-WA0017.jpg",
+      title: "Gallery Image",
+      description: "An image from the gallery.",
+    },
+    {
+      src: "/IMG-20250531-WA0018.jpg",
+      title: "Gallery Image",
+      description: "An image from the gallery.",
+    },
+    {
+      src: "/IMG-20250531-WA0019.jpg",
+      title: "Gallery Image",
+      description: "An image from the gallery.",
+    },
+    {
+      src: "/IMG-20250531-WA0020.jpg",
+      title: "Gallery Image",
+      description: "An image from the gallery.",
+    },
   ];
 
   const [currentIndex, setCurrentIndex] = useState<number | null>(null);
@@ -158,17 +274,22 @@ export default function GalleryModal() {
       {/* Gallery grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 px-4 sm:px-16 mt-10">
         {images.map((img, i) => (
-          <div key={i} className="relative overflow-hidden rounded-lg shadow-lg cursor-pointer group">
+          <div
+            key={i}
+            onClick={() => openModal(i)}
+            className="relative overflow-hidden rounded-lg shadow-lg cursor-pointer group"
+          >
             <Image
               src={img.src}
               alt={img.title}
               width={600}
               height={400}
-              onClick={() => openModal(i)}
               className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
             />
-             <div className="absolute inset-0 bg-black bg-opacity-25 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              <span className="text-white text-lg font-semibold">{img.title}</span>
+            <div className="absolute inset-0 bg-black bg-opacity-25 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <span className="text-white text-lg font-semibold">
+                {img.title}
+              </span>
             </div>
           </div>
         ))}

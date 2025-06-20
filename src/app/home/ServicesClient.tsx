@@ -205,7 +205,7 @@ export default function Home() {
           <div className="flex-shrink-0 animate-floatUp">
             {/* Use Next.js Image component */}
             <Image
-              src="/Screenshot 2025-05-31 055725.png"
+              src="/shazeem.png"
               alt="Syed Shazeem"
               width={256} /* w-64 is 256px */
               height={256} /* h-64 is 256px */
