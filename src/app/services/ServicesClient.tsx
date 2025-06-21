@@ -159,7 +159,7 @@ export default function ServicesClient() {
         </div>
 
         {/* Services Grid Section */}
-        <section className="py-12 px-4 sm:px-10 lg:px-20 bg-white dark:bg-dark1">
+        <section className="py-12 px-4 sm:px-10 lg:px-20 dark:bg-dark1">
           <h1 className="text-5xl font-bold text-center text-gray-800 dark:text-white mb-10">
             Our Signage Services
           </h1>
