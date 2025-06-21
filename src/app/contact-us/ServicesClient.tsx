@@ -204,6 +204,17 @@ export default function ContactUs() {
                   <br />
                   Bangalore, Pincode 560062
                 </p>
+                <button
+                  onClick={() => {
+                    window.open(
+                      "https://www.google.com/maps?q=12.870583,77.566083",
+                      "_blank"
+                    );
+                  }}
+                  className="px-4 py-2 rounded-lg bg-gradient-to-tr mt-2 items-center justify-center from-red-400 to-pink-500 text-white font-medium shadow-md hover:shadow-lg transition duration-300"
+                >
+                  Click Here For Map
+                </button>
               </div>
             </div>
 
