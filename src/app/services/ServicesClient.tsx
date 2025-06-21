@@ -8,14 +8,14 @@ import Image from "next/image";
 import Link from "next/link";
 
 const services = [
-  { title: "Vehicle Branding", image: "img (25).jpg" },
-  { title: "Cabinet Signs", image: "img (10).jpg" },
-  { title: "Station Signs", image: "img (36).jpg" },
-  { title: "Neon Signs", image: "img (24).jpg" },
-  { title: "Digital Signage", image: "img (37).jpeg" },
-  { title: "Directional Signs", image: "img (1).jpg" },
-  { title: "Custom Signs", image: "img (26).jpg" },
-  { title: "Engraved Signs", image: "img (3).jpg" },
+  { title: "Vehicle Branding", image: "public/img (25).jpg" },
+  { title: "Cabinet Signs", image: "public/img (10).jpg" },
+  { title: "Station Signs", image: "public/img (36).jpg" },
+  { title: "Neon Signs", image: "public/img (24).jpg" },
+  { title: "Digital Signage", image: "public/img (37).jpeg" },
+  { title: "Directional Signs", image: "public/img (1).jpg" },
+  { title: "Custom Signs", image: "public/img (26).jpg" },
+  { title: "Engraved Signs", image: "public/img (3).jpg" },
 ];
 
 export default function ServicesClient() {
