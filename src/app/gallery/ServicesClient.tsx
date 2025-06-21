@@ -147,6 +147,18 @@ export default function Gallery() {
               installation, we ensure every sign reflects quality, creativity,
               and impact.
             </p>
+
+            <div className="flex gap-4 mt-4">
+              <a href="#" className="text-white hover:text-red-500">
+                <i className="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" className="text-white hover:text-red-500">
+                <i className="fab fa-instagram"></i>
+              </a>
+              <a href="#" className="text-white hover:text-red-500">
+                <i className="fab fa-linkedin-in"></i>
+              </a>
+            </div>
           </div>
 
           <div>
@@ -197,7 +209,7 @@ export default function Gallery() {
                   >
                     <path d="M16 1.999H8A6.006 6.006 0 0 0 2 7.999v8a6.006 6.006 0 0 0 6 6h8a6.006 6.006 0 0 0 6-6v-8a6.006 6.006 0 0 0-6-6Zm4 14a4.005 4.005 0 0 1-4 4H8a4.005 4.005 0 0 1-4-4v-8a4.005 4.005 0 0 1 4-4h8a4.005 4.005 0 0 1 4 4ZM12 7.999a4 4 0 1 0 4 4 4 4 0 0 0-4-4Zm0 6a2 2 0 1 1 2-2 2 2 0 0 1-2 2ZM17.5 6.499a1 1 0 1 1-1-1 1 1 0 0 1 1 1Z" />
                   </svg>
-                </a> 
+                </a>
               </div>
             </div>
           </div>
@@ -256,11 +268,11 @@ export default function Gallery() {
             </a>
           </div>
         </div>
-      </section>
+      </section>  
 
-      {/* Footer */}
+      {/* Footer 2 */}
       <footer className="relative bottom-0 left-0 w-full bg-black text-gray-600 text-center py-6 mt-0 dark:bg-dark2 dark:text-white">
-          <p>&copy; 2025 Ultimate Graphics. All rights reserved.</p>
+        <p>&copy; 2025 Ultimate Graphics. All rights reserved.</p>
       </footer>
     </div>
   );

@@ -338,7 +338,6 @@ export default function ContactUs() {
                   name="location"
                   id="location"
                   type="text"
-                  required
                   placeholder="Business Location"
                   className="w-full px-5 py-3 rounded-lg bg-gray-100 text-black"
                   suppressHydrationWarning
@@ -411,7 +410,7 @@ export default function ContactUs() {
         </div>
       </section>
 
-      {/* Footer Section */}
+     {/* Footer Section */}
       <section className="relative bottom-0 left-0 w-full bg-[#070f2b] text-white py-10 px-6 sm:px-16">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
           <div>
@@ -521,7 +520,6 @@ export default function ContactUs() {
                 +91 8050093019
               </a>
             </p>
-{statusMessage && <Toast message={statusMessage} type={statusType} />}
             <p className="mt-2 text-sm">
               <span className="font-semibold">Email:</span>
               <br />
@@ -555,24 +553,12 @@ export default function ContactUs() {
             </a>
           </div>
         </div>
-      </section>
+      </section>  
 
+      {/* Footer 2 */}
       <footer className="relative bottom-0 left-0 w-full bg-black text-gray-600 text-center py-6 mt-0 dark:bg-dark2 dark:text-white">
         <p>&copy; 2025 Ultimate Graphics. All rights reserved.</p>
       </footer>
-    </div>
-  );
-}
-
-function Toast({ message, type }: { message: string; type: "success" | "error" | "" }) {
-  if (!message) return null; // Don&rsquo;t render if no message
-
-  return (
-    <div
-      className={`fixed top-4 left-1/2 transform -translate-x-1/2 z-50 px-4 py-3 rounded-md text-white shadow-lg animate-slideIn
-        ${type === "success" ? "bg-green-600" : "bg-red-600"}`}
-    >
-      {message}
     </div>
   );
 }
