@@ -16,6 +16,15 @@ const services = [
   { title: "Directional Signs", image: "img (1).jpg" },
   { title: "Custom Signs", image: "img (26).jpg" },
   { title: "Engraved Signs", image: "img (3).jpg" },
+  { title: "Metal Laser", image: "img (39).jpeg" },
+  { title: "CNC Router", image: "img (38).jpeg" },
+  { title: "Metal Etching", image: "img (40).jpeg" },
+  { title: "Channel Letter", image: "img (41).jpg" },
+  { title: "Metal Letters", image: "img (42).jpeg" },
+  { title: "Printing", image: "img (43).jpg" },
+  { title: "Plotting", image: "img (44).jpg" },
+  { title: "Glass Frosting", image: "img (45).jpeg" },
+  { title: "Vinyl Banners", image: "img (46).jpg" },
 ];
 
 export default function ServicesClient() {
