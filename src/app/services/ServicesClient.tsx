@@ -53,7 +53,7 @@ export default function ServicesClient() {
       />
 
       <div
-        className="bg-white text-gray-800 dark:bg-dark1 dark:text-black min-h-screen"
+        className="text-gray-800 dark:bg-dark1 dark:text-black min-h-screen"
         style={{
           backgroundImage: "url('/background.jpg')",
           backgroundSize: "cover",
