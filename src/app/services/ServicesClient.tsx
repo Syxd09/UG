@@ -26,6 +26,9 @@ const services = [
   { title: "Glass Frosting", image: "img (45).jpeg" },
   { title: "Vinyl Banners", image: "img (46).jpg" },
   { title: "Stickering", image: "img (47).jpeg" },
+  { title: "Vehicle Stickering", image: "img (48).jpg" },
+  { title: "Sun Board Printing", image: "img (49).jpg" },
+  { title: "Business Card Printing", image: "img (50).jpg" },
 ];
 
 export default function ServicesClient() {
