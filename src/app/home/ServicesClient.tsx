@@ -39,7 +39,7 @@ export default function Home() {
             href="/about"
             className="whitespace-nowrap px-5 py-2 rounded-lg border border-white hover:bg-white hover:text-black transition-all duration-300 text-sm md:text-base font-extrabold uppercase tracking-wide font-sans gradient-glow-text animate-pulseSlow"
           >
-            About Us
+            About
           </Link>
           <Link
             href="/services"
