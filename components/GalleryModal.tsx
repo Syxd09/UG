@@ -13,7 +13,7 @@ import {
 export default function GalleryModal() {
   const images = [
     {
-      src: "public/img (3).jpg",
+      src: "img (3).jpg",
       title: "Backlit Sign",
       description: "Custom signage with LED glow for premium look.",
     },
