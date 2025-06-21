@@ -292,13 +292,12 @@ export default function About() {{
             </a>
           </div>
         </div>
-      </section>  
+      </section>
 
-      {/* Footer 2 */}
+      {/* Footer */}
       <footer className="relative bottom-0 left-0 w-full bg-black text-gray-600 text-center py-6 mt-0 dark:bg-dark2 dark:text-white">
-        <p>&copy; 2025 Ultimate Graphics. All rights reserved.</p>
+          <p>&copy; 2025 Ultimate Graphics. All rights reserved.</p>
       </footer>
     </div>
   );
-}
-}
+}}

@@ -186,155 +186,142 @@ export default function ServicesClient() {
         </section>
 
         {/* Footer Section */}
-      <section className="relative bottom-0 left-0 w-full bg-[#070f2b] text-white py-10 px-6 sm:px-16">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
-          <div>
-            <div className="flex items-center gap-2">
-              <Image
-                src="/footer-logo.png"
-                alt="ultimategraphics Logo"
-                width={160}
-                height={100}
-              />
+        <section className="relative bottom-0 left-0 w-full bg-[#070f2b] text-white py-10 px-6 sm:px-16">
+          <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
+            <div>
+              <div className="flex items-center gap-2">
+                <Image
+                  src="/footer-logo.png"
+                  alt="ultimategraphics Logo"
+                  width={160}
+                  height={100}
+                />
+              </div>
+              <p className="text-sm text-gray-300 mb-4">
+                Reshaping your brand&rsquo;s identity with custom signage solutions.
+              </p>
+
+              <p className="text-sm text-gray-400 mb-4">
+                Ultimate Graphics delivers premium, custom signage solutions
+                designed to enhance your brand visibility. From design to
+                installation, we ensure every sign reflects quality, creativity,
+                and impact.
+              </p>
             </div>
-            <p className="text-sm text-gray-300 mb-4">
-              Reshaping your brand&rsquo;s identity with custom signage solutions.
-            </p>
 
-            <p className="text-sm text-gray-400 mb-4">
-              Ultimate Graphics delivers premium, custom signage solutions
-              designed to enhance your brand visibility. From design to
-              installation, we ensure every sign reflects quality, creativity,
-              and impact.
-            </p>
-
-            <div className="flex gap-4 mt-4">
-              <a href="#" className="text-white hover:text-red-500">
-                <i className="fab fa-facebook-f"></i>
-              </a>
-              <a href="#" className="text-white hover:text-red-500">
-                <i className="fab fa-instagram"></i>
-              </a>
-              <a href="#" className="text-white hover:text-red-500">
-                <i className="fab fa-linkedin-in"></i>
-              </a>
-            </div>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-semibold mb-2 border-b-2 border-red-600 w-fit pb-1">
-              Quicklinks
-            </h3>
-            <ul className="space-y-2 text-sm mt-3">
-              <li>
-                <Link href="/about" className="hover:text-red-400">
-                  About Us
-                </Link>
-              </li>
-              <li>
-                <Link href="/services" className="hover:text-red-400">
-                  Services
-                </Link>
-              </li>
-              <li>
-                <Link href="/gallery" className="hover:text-red-400">
-                  Gallery
-                </Link>
-              </li>
-              <li>
-                <Link href="/contact-us" className="hover:text-red-400">
-                  Contact Us
-                </Link>
-              </li>
-            </ul>
-            <br />
-            <div className="text-white">
-              <h2 className="text-lg font-semibold border-b-2 border-red-600 inline-block mb-4">
-                Follow us on
-              </h2>
-              <div className="flex space-x-4">
-                {/* Instagram */}
-                <a
-                  href="https://instagram.com/ultimategraphics_india"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-red-500 transition-colors"
-                  aria-label="Instagram"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                    className="w-6 h-6"
+            <div>
+              <h3 className="text-lg font-semibold mb-2 border-b-2 border-red-600 w-fit pb-1">
+                Quicklinks
+              </h3>
+              <ul className="space-y-2 text-sm mt-3">
+                <li>
+                  <Link href="/about" className="hover:text-red-400">
+                    About Us
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/services" className="hover:text-red-400">
+                    Services
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/gallery" className="hover:text-red-400">
+                    Gallery
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/contact-us" className="hover:text-red-400">
+                    Contact Us
+                  </Link>
+                </li>
+              </ul>
+              <br />
+              <div className="text-white">
+                <h2 className="text-lg font-semibold border-b-2 border-red-600 inline-block mb-4">
+                  Follow us on
+                </h2>
+                <div className="flex space-x-4">
+                  {/* Instagram */}
+                  <a
+                    href="https://instagram.com/ultimategraphics_india"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-red-500 transition-colors"
+                    aria-label="Instagram"
                   >
-                    <path d="M16 1.999H8A6.006 6.006 0 0 0 2 7.999v8a6.006 6.006 0 0 0 6 6h8a6.006 6.006 0 0 0 6-6v-8a6.006 6.006 0 0 0-6-6Zm4 14a4.005 4.005 0 0 1-4 4H8a4.005 4.005 0 0 1-4-4v-8a4.005 4.005 0 0 1 4-4h8a4.005 4.005 0 0 1 4 4ZM12 7.999a4 4 0 1 0 4 4 4 4 0 0 0-4-4Zm0 6a2 2 0 1 1 2-2 2 2 0 0 1-2 2ZM17.5 6.499a1 1 0 1 1-1-1 1 1 0 0 1 1 1Z" />
-                  </svg>
-                </a>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                      className="w-6 h-6"
+                    >
+                      <path d="M16 1.999H8A6.006 6.006 0 0 0 2 7.999v8a6.006 6.006 0 0 0 6 6h8a6.006 6.006 0 0 0 6-6v-8a6.006 6.006 0 0 0-6-6Zm4 14a4.005 4.005 0 0 1-4 4H8a4.005 4.005 0 0 1-4-4v-8a4.005 4.005 0 0 1 4-4h8a4.005 4.005 0 0 1 4 4ZM12 7.999a4 4 0 1 0 4 4 4 4 0 0 0-4-4Zm0 6a2 2 0 1 1 2-2 2 2 0 0 1-2 2ZM17.5 6.499a1 1 0 1 1-1-1 1 1 0 0 1 1 1Z" />
+                    </svg>
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div>
-            <h3 className="text-lg font-semibold mb-2 border-b-2 border-red-600 w-fit pb-1">
-              Get in touch
-            </h3>
-            <p className="text-sm text-gray-400 mt-3">
-              <span className="font-semibold text-white">Address:</span>
-              <br />
-              JP nagar 9th phase
-              <br />
-              amruthnagar road, opposite to axis bank
-              <br />
-              Bangalore, Pincode 560062
-            </p>
-            <p className="mt-3 text-sm">
+            <div>
+              <h3 className="text-lg font-semibold mb-2 border-b-2 border-red-600 w-fit pb-1">
+                Get in touch
+              </h3>
+              <p className="text-sm text-gray-400 mt-3">
+                <span className="font-semibold text-white">Address:</span>
+                <br />
+                JP nagar 9th phase
+                <br />
+                amruthnagar road, opposite to axis bank
+                <br />
+                Bangalore, Pincode 560062
+              </p>
+              <p className="mt-3 text-sm">
+                <a
+                  href="tel:+918050093019"
+                  className="text-white text-base hover:text-gray-400 transition duration-200"
+                >
+                  +91 8050093019
+                </a>
+              </p>
+              <p className="mt-2 text-sm">
+                <span className="font-semibold">Email:</span>
+                <br />
+                <a
+                  href="mailto:ultimategraphics74@gmail.com"
+                  className="text-red-600 text-base hover:text-gray-400 transition duration-200"
+                >
+                  ultimategraphics74@gmail.com
+                </a>
+              </p>
+            </div>
+
+            <div>
+              <h3 className="text-lg font-semibold mb-2">Contact Us</h3>
+              <p className="text-sm text-gray-400 mb-4">
+                Reach out to us for creative and customized signage solutions
+              </p>
               <a
-                href="tel:+918050093019"
-                className="text-white text-base hover:text-gray-400 transition duration-200"
+                href="/contact-us"
+                className="inline-flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white text-sm font-medium px-5 py-2 rounded-md transition-colors shadow-md"
               >
-                +91 8050093019
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  className="w-5 h-5"
+                >
+                  <path d="M4,21a1,1,0,0,0,1,1H19a1,1,0,0,0,1-1V3a1,1,0,0,0-1-1H5A1,1,0,0,0,4,3ZM12,7.5a2,2,0,1,1-2,2A2,2,0,0,1,12,7.5ZM8.211,16.215a4,4,0,0,1,7.578,0A.993.993,0,0,1,14.83,17.5H9.18A1,1,0,0,1,8.211,16.215Z" />
+                </svg>
+                Contact Form
               </a>
-            </p>
-            <p className="mt-2 text-sm">
-              <span className="font-semibold">Email:</span>
-              <br />
-              <a
-                href="mailto:ultimategraphics74@gmail.com"
-                className="text-red-600 text-base hover:text-gray-400 transition duration-200"
-              >
-                ultimategraphics74@gmail.com
-              </a>
-            </p>
+            </div>
           </div>
-
-          <div>
-            <h3 className="text-lg font-semibold mb-2">Contact Us</h3>
-            <p className="text-sm text-gray-400 mb-4">
-              Reach out to us for creative and customized signage solutions
-            </p>
-            <a
-              href="/contact-us"
-              className="inline-flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white text-sm font-medium px-5 py-2 rounded-md transition-colors shadow-md"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="currentColor"
-                viewBox="0 0 24 24"
-                className="w-5 h-5"
-              >
-                <path d="M4,21a1,1,0,0,0,1,1H19a1,1,0,0,0,1-1V3a1,1,0,0,0-1-1H5A1,1,0,0,0,4,3ZM12,7.5a2,2,0,1,1-2,2A2,2,0,0,1,12,7.5ZM8.211,16.215a4,4,0,0,1,7.578,0A.993.993,0,0,1,14.83,17.5H9.18A1,1,0,0,1,8.211,16.215Z" />
-              </svg>
-              Contact Form
-            </a>
-          </div>
-        </div>
-      </section>  
-
-      {/* Footer 2 */}
-      <footer className="relative bottom-0 left-0 w-full bg-black text-gray-600 text-center py-6 mt-0 dark:bg-dark2 dark:text-white">
-        <p>&copy; 2025 Ultimate Graphics. All rights reserved.</p>
-      </footer>
-    </div>
+        </section>
+        {/* Footer */}
+        <footer className="relative bottom-0 left-0 w-full bg-black text-gray-600 text-center py-6 dark:bg-dark2 dark:text-white">
+          <p>&copy; 2025 Ultimate Graphics. All rights reserved.</p>
+        </footer>
+      </div>
     </>
   );
 }
