@@ -147,6 +147,64 @@ export default function About() {{
           </div>
         </div>
 
+      {/* Third Block */}
+        <section className="flex items-center justify-center px-6 py-12 text-white">
+  <div className="text-center max-w-6xl w-full">
+    <h2 className="text-4xl md:text-5xl font-extrabold tracking-wide mb-12 gradient-glow-text drop-shadow-lg leading-tight animate-pulseSlow">
+      Why Choose Us
+    </h2>
+    
+    <div className="grid md:grid-cols-3 gap-8 text-left">
+  <div>
+    <h4 className="text-xl font-semibold tracking-wide mb-2 gradient-glow-text drop-shadow-lg leading-tight animate-pulseSlow">
+      🧠 Innovative Design Thinking
+    </h4>
+    <p className="text-gray-300">
+      Our design approach combines creativity with strategy, ensuring each project resonates with your audience and elevates your brand presence.
+    </p>
+  </div>
+
+  <div>
+    <h4 className="text-xl font-semibold tracking-wide mb-2 gradient-glow-text drop-shadow-lg leading-tight animate-pulseSlow">
+      📦 Complete Visual Solutions
+    </h4>
+    <p className="text-gray-300">
+      From concept development to final execution, we offer full-spectrum services—including signage, digital art, branding, and web graphics—all under one roof.
+    </p>
+  </div>
+
+  <div>
+    <h4 className="text-xl font-semibold tracking-wide mb-2 gradient-glow-text drop-shadow-lg leading-tight animate-pulseSlow">
+      ⏱ Reliable Turnaround & Support
+    </h4>
+    <p className="text-gray-300">
+      We pride ourselves on delivering projects on time and providing ongoing support, ensuring a seamless and hassle-free experience from start to finish.
+    </p>
+  </div>
+</div>
+    </div>
+</section>
+
+                <div className="w-full h-1 bg-gradient-to-r from-purple-400 via-pink-500 to-purple-400 mt-10 rounded-full animate-pulseSlow"></div>
+
+
+<section className="flex items-center justify-center px-6 py-12 text-white">
+  <div className="text-center max-w-6xl w-full">
+    <h2 className="text-4xl md:text-5xl font-extrabold tracking-wide mb-4 gradient-glow-text drop-shadow-lg leading-tight animate-pulseSlow">
+      Take A Look At Our Work
+    </h2> 
+    <p className="text-lg mb-4">
+          Explore our creative signage solutions that blend innovation and artistry.
+        </p>
+    <Link
+              href="/gallery"
+              className="inline-block whitespace-nowrap px-5 py-2 rounded-lg border border-white  text-sm md:text-base font-extrabold leading-tighter uppercase tracking-wide font-sans gradient-glow-text animate-pulseSlow animate__animated animate__fadeInUp animate__delay-4s"
+            >
+              Gallery
+            </Link>
+    </div>
+
+      </section>
       </section>
 
        {/* Footer Section */}
