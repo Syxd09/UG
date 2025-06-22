@@ -118,7 +118,7 @@ export default function Gallery() {
       {/* photo section */}
       <section className="bg-white dark:bg-dark1 py-20" style={{ backgroundImage: "url('/background.jpg')", backgroundSize: 'cover' }}>
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-5xl font-extrabold leading-tight uppercase tracking-wide font-sans gradient-glow-text animate-pulseSlow">
+          <h2 className="text-5xl font-extrabold text-center leading-tight uppercase tracking-wide font-sans gradient-glow-text animate-pulseSlow">
             Our Gallery
           </h2>
           <GalleryModal />
