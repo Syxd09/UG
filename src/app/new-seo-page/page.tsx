@@ -126,7 +126,6 @@ export default function UltimateGraphicsHomepage() {
       "https://ultimategraphicsindia.in/main-UG-LOGO.jpg"
     ],
     "telephone": "+91-80-5009-3019",
-    "priceRange": "₹₹",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "JP Nagar 9th Phase, Amruthnagar Road, Opposite to Axis Bank",

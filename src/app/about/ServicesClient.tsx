@@ -137,7 +137,7 @@ export default function About() {{
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="md:order-2 overflow-hidden rounded-xl shadow-xl">
             {/* Use Next.js Image component */}
-            <Image src="img (2).jpg" alt="Image 2" width={500} height={300} className="w-full h-full object-cover" /> {/* Added width and height, adjust as needed */}
+            <Image src="img(2).jpg" alt="Image 2" width={500} height={300} className="w-full h-full object-cover" /> {/* Added width and height, adjust as needed */}
           </div>
           <div className="md:order-1">
             <h2 className="text-5xl font-extrabold tracking-wide mb-6 gradient-glow-text drop-shadow-lg leading-tight animate-pulseSlow">Crafting Signs, Creating Impact</h2>
