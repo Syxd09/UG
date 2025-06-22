@@ -155,15 +155,22 @@ export default function GalleryModal() {
   };
 
   const shareWhatsApp = (url: string) => {
-  // Ensure the URL starts with a slash
-  const cleanUrl = url.startsWith("/") ? url : `/${url}`;
+  // Step 1: Trim whitespace and normalize
+  const sanitizedUrl = url.trim().replace(/\s+/g, '%20'); // replace spaces with %20
+
+  // Step 2: Ensure it starts with a slash
+  const cleanUrl = sanitizedUrl.startsWith("/") ? sanitizedUrl : `/${sanitizedUrl}`;
+
+  // Step 3: Construct full URL
   const fullUrl = `${window.location.origin}${cleanUrl}`;
-  
+
+  // Step 4: Open WhatsApp with message
   window.open(
-    `https://api.whatsapp.com/send?text=Check this signage from Ultimate Graphics: ${fullUrl}`,
+    `https://api.whatsapp.com/send?text=Check this signage: ${fullUrl}`,
     "_blank"
   );
 };
+
 
 
   const handleTouchStart = (e: React.TouchEvent) =>
