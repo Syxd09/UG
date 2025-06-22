@@ -113,7 +113,7 @@ export default function Home() {
           {/* Text Content */}
           <div className="flex-1 text-center md:text-left space-y-6 animate__animated animate__fadeInLeft">
             <h1
-              className="text-5xl sm:text-6xl md:text-7xl font-extrabold leading-tighter uppercase tracking-wide font-sans gradient-glow-text animate-pulseSlow animate__animated animate__fadeInDown animate__delay-10s"
+              className="text-5xl sm:text-6xl md:text-7xl font-extrabold leading-tighter uppercase tracking-wide font-sans gradient-glow-text animate-pulseSlow animate__delay-10s"
               style={{ lineHeight: "1.1" }}
             >
               Reshaping Your
@@ -125,7 +125,7 @@ export default function Home() {
             {/* Use Next.js Link component */}
             <Link
               href="/contact-us"
-              className="inline-block whitespace-nowrap px-5 py-2 rounded-lg border border-white  text-sm md:text-base font-extrabold leading-tighter uppercase tracking-wide font-sans gradient-glow-text animate-pulseSlow animate__animated animate__fadeInUp animate__delay-4s"
+              className="inline-block whitespace-nowrap px-5 py-2 rounded-lg border border-white  text-sm md:text-base font-extrabold leading-tighter uppercase tracking-wide font-sans gradient-glow-text animate-pulseSlow animate__delay-4s"
             >
               Contact Us
             </Link>
