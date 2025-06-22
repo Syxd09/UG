@@ -155,10 +155,16 @@ export default function GalleryModal() {
   };
 
   const shareWhatsApp = (url: string) => {
-    window.open(
-      `https://api.whatsapp.com/send?text=Check this signage: ${window.location.origin}${url}`
-    );
-  };
+  // Ensure the URL starts with a slash
+  const cleanUrl = url.startsWith("/") ? url : `/${url}`;
+  const fullUrl = `${window.location.origin}${cleanUrl}`;
+  
+  window.open(
+    `https://api.whatsapp.com/send?text=Check this signage from Ultimate Graphics: ${fullUrl}`,
+    "_blank"
+  );
+};
+
 
   const handleTouchStart = (e: React.TouchEvent) =>
     setTouchStartX(e.touches[0].clientX);

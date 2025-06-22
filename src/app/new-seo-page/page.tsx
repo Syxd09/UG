@@ -120,10 +120,10 @@ export default function UltimateGraphicsHomepage() {
     "alternateName": "Ultimate Graphics India",
     "description": "Leading custom signage and graphic design company in Bangalore specializing in LED signs, acrylic boards, vinyl banners, 3D lettering, and comprehensive branding solutions.",
     "url": "https://ultimategraphicsindia.in",
-    "logo": "https://ultimategraphicsindia.in/ug-logo.png",
+    "logo": "https://ultimategraphicsindia.in/main-UG-LOGO.jpg",
     "image": [
       "https://ultimategraphicsindia.in/images/ultimate-graphics-showcase.jpg",
-      "https://ultimategraphicsindia.in/ug-logo.png"
+      "https://ultimategraphicsindia.in/main-UG-LOGO.jpg"
     ],
     "telephone": "+91-80-5009-3019",
     "priceRange": "₹₹",
