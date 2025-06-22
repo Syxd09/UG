@@ -172,7 +172,7 @@ export default function ServicesClient() {
 
         {/* Services Grid Section */}
         <section className="py-12 px-4 sm:px-10 lg:px-20 dark:bg-dark1">
-          <h1 className="text-5xl font-extrabold text-center mt-4 mb-6 leading-tight uppercase tracking-wide font-sans gradient-glow-text animate-pulseSlow">
+          <h1 className="text-5xl font-extrabold text-center mt-6 mb-10 leading-tight uppercase tracking-wide font-sans gradient-glow-text animate-pulseSlow">
             Our Signage Services
           </h1>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
@@ -210,7 +210,8 @@ export default function ServicesClient() {
                 />
               </div>
               <p className="text-sm text-gray-300 mb-4">
-                Reshaping your brand&rsquo;s identity with custom signage solutions.
+                Reshaping your brand&rsquo;s identity with custom signage
+                solutions.
               </p>
 
               <p className="text-sm text-gray-400 mb-4">

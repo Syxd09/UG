@@ -51,9 +51,7 @@ export const metadata: Metadata = {
     title: "Ultimate Graphics Bangalore | Custom Signage & LED Signs Experts",
     description:
       "Premium signage solutions in Bangalore: LED signs, acrylic boards, vinyl banners, 3D lettering. 15+ years experience. Get free quote today!",
-    images: [
-      "main-UG-LOGO.jpg",
-    ],
+    images: ["main-UG-LOGO.jpg"],
   },
   alternates: {
     canonical: "https://ultimategraphicsindia.in",
