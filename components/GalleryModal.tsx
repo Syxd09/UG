@@ -23,7 +23,7 @@ export default function GalleryModal() {
       src: "img(17).jpg",
       title: "Neon Art",
       description: "Café-inspired neon wall art.",
-      classname: "animate__animated animate__fadeInUp animate__delay-4s",
+      classname: "animate__animated animate__fadeInUp animate__delay-2s",
     },
     {
       src: "img(10).jpg",
@@ -35,7 +35,7 @@ export default function GalleryModal() {
       src: "img(24).jpg",
       title: "Creative Concept",
       description: "Bold concepts for your business identity.",
-      classname: "animate__animated animate__fadeInUp animate__delay-6s",
+      classname: "animate__animated animate__fadeInUp animate__delay-5s",
     },
     {
       src: "img(1).jpg",

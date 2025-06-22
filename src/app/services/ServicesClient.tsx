@@ -172,7 +172,7 @@ export default function ServicesClient() {
 
         {/* Services Grid Section */}
         <section className="py-12 px-4 sm:px-10 lg:px-20 dark:bg-dark1">
-          <h1 className="text-5xl sm:text-6xl md:text-5xl leading-tighter font-sans gradient-glow-text animate-pulseSlow animate__animated animate__fadeInDown animate__delay-10s font-extrabold text-center uppercase tracking-wide mb-10">
+          <h1 className="text-5xl font-extrabold leading-tight uppercase tracking-wide font-sans gradient-glow-text animate-pulseSlow">
             Our Signage Services
           </h1>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
