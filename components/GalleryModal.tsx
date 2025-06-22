@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import "animate.css";
 import { useEffect, useState } from "react";
 import {
   FaTimes,
@@ -16,91 +17,109 @@ export default function GalleryModal() {
       src: "img(3).jpg",
       title: "Backlit Sign",
       description: "Custom signage with LED glow for premium look.",
+      classname: "animate__animated animate__fadeInUp animate__delay-1s",
     },
     {
       src: "img(17).jpg",
       title: "Neon Art",
       description: "Café-inspired neon wall art.",
+      classname: "animate__animated animate__fadeInUp animate__delay-1s",
     },
     {
       src: "img(10).jpg",
       title: "Office Branding",
       description: "Corporate space with branded signage.",
+      classname: "animate__animated animate__fadeInUp animate__delay-2s",
     },
     {
       src: "img(24).jpg",
       title: "Creative Concept",
       description: "Bold concepts for your business identity.",
+      classname: "animate__animated animate__fadeInUp animate__delay-2s",
     },
     {
       src: "img(1).jpg",
       title: "Pylon Sign",
       description: "Eye-catching outdoor pylon signage.",
+      classname: "animate__animated animate__fadeInUp animate__delay-3s",
     },
     {
       src: "img(13).jpg",
       title: "Directional Board",
       description: "Elegant and functional directional signs.",
+      classname: "animate__animated animate__fadeInUp animate__delay-3s",
     },
     {
       src: "img(34).jpg",
       title: "Office Directional Board",
       description: "simple and functional directional signs.",
+      classname: "animate__animated animate__fadeInUp animate__delay-4s",
     },
     {
       src: "img(8).jpg",
       title: "Avertisement Board",
       description: "Promotional signage for events.",
+      classname: "animate__animated animate__fadeInUp animate__delay-4s",
     },
     {
       src: "img(4).jpg",
       title: "Office Sign Board",
       description: "Professional office sign board.",
+      classname: "animate__animated animate__fadeInUp animate__delay-5s",
     },
     {
       src: "img(7).jpg",
       title: "cardboard standees",
       description: "Custom cardboard standees for events.",
+      classname: "animate__animated animate__fadeInUp animate__delay-5s",
     },
     {
       src: "img(6).jpg",
       title: "Shop Signage",
       description: "Stylish shop signage for retail spaces.",
+      classname: "animate__animated animate__fadeInUp animate__delay-6s",
     },
     {
       src: "img(18).jpg",
       title: "Retail Signage",
       description: "Modern retail signage with vibrant colors.",
+      classname: "animate__animated animate__fadeInUp animate__delay-6s",
     },
     {
       src: "img(15).jpg",
       title: "Retail Signage",
       description: "Modern retail signage with vibrant colors.",
+      classname: "animate__animated animate__fadeInUp animate__delay-7s",
     },
     {
       src: "img(21).jpg",
       title: "Office interior Signage",
       description: "Elegant office interior signage.",
+      classname: "animate__animated animate__fadeInUp animate__delay-7s",
     },
     {
       src: "img(22).jpg",
       title: "Directional Signage",
       description: "Clear and concise directional signage.",
+      classname: "animate__animated animate__fadeInUp animate__delay-8s",
     },
     {
       src: "img(30).jpg",
       title: "Company Reception Signage",
       description: "Sleek reception signage for corporate spaces.",
+      classname: "animate__animated animate__fadeInUp animate__delay-9s",
     },
     {
       src: "img(26).jpg",
       title: "Custom Signage",
       description: "Tailored signage solutions for your brand.",
+      classname: "animate__animated animate__fadeInUp animate__delay-9s",
     },
     {
       src: "img(25).jpg",
       title: "Vehicle Branding And Advertisement",
       description: "Mobile advertising with vehicle branding.",
+      classname: "animate__animated animate__fadeInUp animate__delay-10s",
     },
   ];
 
@@ -154,33 +173,21 @@ export default function GalleryModal() {
     document.body.removeChild(link);
   };
 
-const shareWhatsApp = (url: string) => {
-  // Step 1: Remove any weird/invisible characters
-  const cleaned = url
-    .normalize("NFKC")                  // normalize special characters
-    .replace(/[^\x20-\x7E]/g, "")       // strip non-visible ASCII (like \u00A0)
-    .trim();
+  const shareWhatsApp = (url: string) => {
+    const cleaned = url
+      .normalize("NFKC")
+      .replace(/[^\x20-\x7E]/g, "")
+      .trim();
 
-  // Step 2: Force leading slash
-  const path = cleaned.startsWith("/") ? cleaned : `/${cleaned}`;
+    const path = cleaned.startsWith("/") ? cleaned : `/${cleaned}`;
+    const encodedPath = encodeURI(path);
+    const fullUrl = `${window.location.origin}${encodedPath}`;
 
-  // Step 3: Encode only the path part (excluding domain)
-  const encodedPath = encodeURI(path); // encodes spaces and () correctly
-
-  // Step 4: Construct the full URL
-  const fullUrl = `${window.location.origin}${encodedPath}`;
-
-  // Step 5: Open WhatsApp share link
-  window.open(
-    `https://api.whatsapp.com/send?text=Check this signage: ${fullUrl}`,
-    "_blank"
-  );
-};
-
-
-
-
-
+    window.open(
+      `https://api.whatsapp.com/send?text=Check this signage: ${fullUrl}`,
+      "_blank"
+    );
+  };
 
   const handleTouchStart = (e: React.TouchEvent) =>
     setTouchStartX(e.touches[0].clientX);
@@ -214,7 +221,9 @@ const shareWhatsApp = (url: string) => {
           <div
             key={i}
             onClick={() => openModal(i)}
-            className="relative overflow-hidden rounded-lg shadow-lg cursor-pointer group"
+            className={`relative overflow-hidden rounded-lg shadow-lg cursor-pointer group ${
+              img.classname || ""
+            }`}
           >
             <Image
               src={img.src}
