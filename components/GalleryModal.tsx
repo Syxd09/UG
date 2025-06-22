@@ -16,91 +16,109 @@ export default function GalleryModal() {
       src: "img(3).jpg",
       title: "Backlit Sign",
       description: "Custom signage with LED glow for premium look.",
+      classname: "w-full shadow-lg hover:scale-105 transition-transform duration-300 animate__animated animate__fadeInUp animate__delay-1s"
     },
     {
       src: "img(17).jpg",
       title: "Neon Art",
       description: "Café-inspired neon wall art.",
+      classname: "w-full shadow-lg hover:scale-105 transition-transform duration-300 animate__animated animate__fadeInUp animate__delay-1s"
     },
     {
       src: "img(10).jpg",
       title: "Office Branding",
       description: "Corporate space with branded signage.",
+      classname: "w-full shadow-lg hover:scale-105 transition-transform duration-300 animate__animated animate__fadeInUp animate__delay-2s"
     },
     {
       src: "img(24).jpg",
       title: "Creative Concept",
       description: "Bold concepts for your business identity.",
+      classname: "w-full shadow-lg hover:scale-105 transition-transform duration-300 animate__animated animate__fadeInUp animate__delay-2s"
     },
     {
       src: "img(1).jpg",
       title: "Pylon Sign",
       description: "Eye-catching outdoor pylon signage.",
+      classname: "w-full shadow-lg hover:scale-105 transition-transform duration-300 animate__animated animate__fadeInUp animate__delay-3s"
     },
     {
       src: "img(13).jpg",
       title: "Directional Board",
       description: "Elegant and functional directional signs.",
+      classname: "w-full shadow-lg hover:scale-105 transition-transform duration-300 animate__animated animate__fadeInUp animate__delay-3s"
     },
     {
       src: "img(34).jpg",
       title: "Office Directional Board",
       description: "simple and functional directional signs.",
+      classname: "w-full shadow-lg hover:scale-105 transition-transform duration-300 animate__animated animate__fadeInUp animate__delay-4s"
     },
     {
       src: "img(8).jpg",
       title: "Avertisement Board",
       description: "Promotional signage for events.",
+      classname: "w-full shadow-lg hover:scale-105 transition-transform duration-300 animate__animated animate__fadeInUp animate__delay-4s"
     },
     {
       src: "img(4).jpg",
       title: "Office Sign Board",
       description: "Professional office sign board.",
+      classname: "w-full shadow-lg hover:scale-105 transition-transform duration-300 animate__animated animate__fadeInUp animate__delay-5s"
     },
     {
       src: "img(7).jpg",
       title: "cardboard standees",
       description: "Custom cardboard standees for events.",
+      classname: "w-full shadow-lg hover:scale-105 transition-transform duration-300 animate__animated animate__fadeInUp animate__delay-5s"
     },
     {
       src: "img(6).jpg",
       title: "Shop Signage",
       description: "Stylish shop signage for retail spaces.",
+      classname: "w-full shadow-lg hover:scale-105 transition-transform duration-300 animate__animated animate__fadeInUp animate__delay-6s"
     },
     {
       src: "img(18).jpg",
       title: "Retail Signage",
       description: "Modern retail signage with vibrant colors.",
+      classname: "w-full shadow-lg hover:scale-105 transition-transform duration-300 animate__animated animate__fadeInUp animate__delay-6s"
     },
     {
       src: "img(15).jpg",
       title: "Retail Signage",
       description: "Modern retail signage with vibrant colors.",
+      classname: "w-full shadow-lg hover:scale-105 transition-transform duration-300 animate__animated animate__fadeInUp animate__delay-7s"
     },
     {
       src: "img(21).jpg",
       title: "Office interior Signage",
       description: "Elegant office interior signage.",
+      classname: "w-full shadow-lg hover:scale-105 transition-transform duration-300 animate__animated animate__fadeInUp animate__delay-7s"
     },
     {
       src: "img(22).jpg",
       title: "Directional Signage",
       description: "Clear and concise directional signage.",
+      classname: "w-full shadow-lg hover:scale-105 transition-transform duration-300 animate__animated animate__fadeInUp animate__delay-8s"
     },
     {
       src: "img(30).jpg",
       title: "Company Reception Signage",
       description: "Sleek reception signage for corporate spaces.",
+      classname: "w-full shadow-lg hover:scale-105 transition-transform duration-300 animate__animated animate__fadeInUp animate__delay-8s"
     },
     {
       src: "img(26).jpg",
       title: "Custom Signage",
       description: "Tailored signage solutions for your brand.",
+      classname: "w-full shadow-lg hover:scale-105 transition-transform duration-300 animate__animated animate__fadeInUp animate__delay-9s"
     },
     {
       src: "img(25).jpg",
       title: "Vehicle Branding And Advertisement",
       description: "Mobile advertising with vehicle branding.",
+      classname: "w-full shadow-lg hover:scale-105 transition-transform duration-300 animate__animated animate__fadeInUp animate__delay-9s"
     },
   ];
 
