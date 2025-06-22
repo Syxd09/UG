@@ -155,22 +155,23 @@ export default function GalleryModal() {
   };
 
   const shareWhatsApp = (url: string) => {
-  // Step 1: Normalize and encode the path
-  const filePath = url.trim().replace(/\u00A0/g, ' '); // replace non-breaking spaces with regular space
-  const encodedPath = encodeURIComponent(filePath).replace(/%2F/g, "/"); // preserve slashes
+  // Ensure the path starts with a slash and has no hidden characters
+  const cleanPath = url.trim().replace(/\u00A0/g, ' ');
+  const finalPath = cleanPath.startsWith("/") ? cleanPath : `/${cleanPath}`;
 
-  // Step 2: Make sure it starts with a slash
-  const cleanPath = encodedPath.startsWith("/") ? encodedPath : `/${encodedPath}`;
+  // Encode the final path to handle spaces and special characters
+  const encodedPath = encodeURI(finalPath);
 
-  // Step 3: Combine with origin
-  const fullUrl = `${window.location.origin}${cleanPath}`;
+  // Build full image URL
+  const fullUrl = `${window.location.origin}${encodedPath}`;
 
-  // Step 4: Open WhatsApp with the message
+  // Open WhatsApp with message
   window.open(
     `https://api.whatsapp.com/send?text=Check this signage: ${fullUrl}`,
     "_blank"
   );
 };
+
 
 
 
