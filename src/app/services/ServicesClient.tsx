@@ -18,7 +18,6 @@ const services = [
   { title: "Engraved Signs", image: "img(3).jpg" },
   { title: "Metal Laser", image: "img(39).jpeg" },
   { title: "CNC Router", image: "img(38).jpeg" },
-  { title: "Metal Etching", image: "img(40).jpeg" },
   { title: "Channel Letter", image: "img(41).jpg" },
   { title: "Metal Letters", image: "img(42).jpeg" },
   { title: "Printing", image: "img(43).jpg" },
