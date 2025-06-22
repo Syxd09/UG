@@ -154,23 +154,23 @@ export default function GalleryModal() {
     document.body.removeChild(link);
   };
 
-  const shareWhatsApp = (url: string) => {
-  // Ensure the path starts with a slash and has no hidden characters
-  const cleanPath = url.trim().replace(/\u00A0/g, ' ');
-  const finalPath = cleanPath.startsWith("/") ? cleanPath : `/${cleanPath}`;
+ const shareWhatsApp = (url: string) => {
+  // Fix common filename issues
+  const cleaned = url
+    .trim()
+    .replace(/\u00A0/g, " ")          // fix non-breaking spaces
+    .replace(/\s+/g, "%20");          // encode all spaces correctly
 
-  // Encode the final path to handle spaces and special characters
-  const encodedPath = encodeURI(finalPath);
+  const finalPath = cleaned.startsWith("/") ? cleaned : `/${cleaned}`;
+  const fullUrl = `${window.location.origin}${finalPath}`;
 
-  // Build full image URL
-  const fullUrl = `${window.location.origin}${encodedPath}`;
-
-  // Open WhatsApp with message
+  // Open WhatsApp
   window.open(
     `https://api.whatsapp.com/send?text=Check this signage: ${fullUrl}`,
     "_blank"
   );
 };
+
 
 
 
