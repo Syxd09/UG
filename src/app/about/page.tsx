@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     siteName: "Ultimate Graphics India",
     images: [
       {
-        url: "main-UG-LOGO.png",
+        url: "main-UG-LOGO.jpg",
         width: 1200,
         height: 630,
         alt: "Ultimate Graphics Bangalore - Custom Signage and LED Signs Display",
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     description:
       "Premium signage solutions in Bangalore: LED signs, acrylic boards, vinyl banners, 3D lettering. 15+ years experience. Get free quote today!",
     images: [
-      "main-UG-LOGO.pngg",
+      "main-UG-LOGO.jpg",
     ],
   },
   alternates: {
