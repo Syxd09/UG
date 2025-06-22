@@ -154,17 +154,23 @@ export default function GalleryModal() {
     document.body.removeChild(link);
   };
 
- const shareWhatsApp = (url: string) => {
-  // Fix common filename issues
+const shareWhatsApp = (url: string) => {
+  // Step 1: Remove any weird/invisible characters
   const cleaned = url
-    .trim()
-    .replace(/\u00A0/g, " ")          // fix non-breaking spaces
-    .replace(/\s+/g, "%20");          // encode all spaces correctly
+    .normalize("NFKC")                  // normalize special characters
+    .replace(/[^\x20-\x7E]/g, "")       // strip non-visible ASCII (like \u00A0)
+    .trim();
 
-  const finalPath = cleaned.startsWith("/") ? cleaned : `/${cleaned}`;
-  const fullUrl = `${window.location.origin}${finalPath}`;
+  // Step 2: Force leading slash
+  const path = cleaned.startsWith("/") ? cleaned : `/${cleaned}`;
 
-  // Open WhatsApp
+  // Step 3: Encode only the path part (excluding domain)
+  const encodedPath = encodeURI(path); // encodes spaces and () correctly
+
+  // Step 4: Construct the full URL
+  const fullUrl = `${window.location.origin}${encodedPath}`;
+
+  // Step 5: Open WhatsApp share link
   window.open(
     `https://api.whatsapp.com/send?text=Check this signage: ${fullUrl}`,
     "_blank"
