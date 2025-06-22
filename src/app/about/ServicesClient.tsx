@@ -235,7 +235,7 @@ export default function About() {
               </p>
               <Link
                 href="/gallery"
-                className="inline-block whitespace-nowrap px-5 py-2 rounded-lg border border-white  text-sm md:text-base font-extrabold leading-tighter uppercase tracking-wide font-sans gradient-glow-text animate-pulseSlow animate__animated animate__fadeInUp animate__delay-4s"
+                className="inline-block whitespace-nowrap px-5 py-2 rounded-lg border border-white  text-sm md:text-base font-extrabold leading-tighter uppercase tracking-wide font-sans gradient-glow-text animate-pulseSlow animate__delay-4s"
               >
                 Gallery
               </Link>
