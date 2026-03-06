@@ -10,13 +10,7 @@ export default function About() {
 
     return (
       <div
-        className="bg-white text-gray-800 dark:bg-dark1 dark:text-black min-h-screen"
-        style={{
-          backgroundImage: "url('/background.jpg')",
-          backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
-          backgroundPosition: "center",
-        }}
+        className="bg-transparent text-gray-800 dark:bg-transparent dark:text-black min-h-screen"
       >
         {/* Navbar */}
         <nav className="bg-black text-white px-4 sm:px-6 py-4 flex items-center justify-between shadow-md fixed top-0 left-0 w-full z-50 dark:bg-dark2">
@@ -153,7 +147,7 @@ export default function About() {
             <div className="md:order-2 overflow-hidden rounded-xl shadow-xl">
               {/* Use Next.js Image component */}
               <Image
-                src="img(2).jpg"
+                src="/img(2).jpg"
                 alt="Image 2"
                 width={500}
                 height={300}

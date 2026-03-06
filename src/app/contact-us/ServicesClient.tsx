@@ -50,13 +50,7 @@ export default function ContactUs() {
 
   return (
     <div
-      className="bg-white text-gray-800 dark:bg-dark1 dark:text-black min-h-screen"
-      style={{
-        backgroundImage: "url('/background.jpg')",
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
-        backgroundPosition: "center",
-      }}
+      className="bg-transparent text-gray-800 dark:bg-transparent dark:text-black min-h-screen"
     >
       {/* Navbar */}
       <nav className="bg-black text-white px-4 sm:px-6 py-4 flex items-center justify-between shadow-md fixed top-0 left-0 w-full z-50 dark:bg-dark2">
@@ -169,49 +163,36 @@ export default function ContactUs() {
       {/* Contact Section */}
       <section
         className="py-12 px-4 md:px-16"
-        style={{
-          backgroundImage: "url('/background.jpg')",
-          backgroundSize: "cover",
-        }}
       >
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
-          <div className="text-left space-y-10">
+          {/* Left Panel */}
+          <div className="text-left space-y-8">
             <div>
-              <h2 className="text-5xl font-extrabold uppercase tracking-wide font-sans gradient-glow-text animate-pulseSlow">
+              <h2 className="text-5xl font-extrabold uppercase tracking-wide font-sans gradient-glow-text">
                 Let&rsquo;s Talk
               </h2>
-              <p className="text-gray-600 text-lg">
-                We&rsquo;d love to hear your feedback or answer any questions you may
-                have.
+              <p className="text-gray-300 text-lg mt-4">
+                We&rsquo;d love to hear your feedback or answer any questions you may have.
               </p>
             </div>
 
             {/* Address */}
-            <div className="flex items-start gap-4 p-4 bg-gray-50 rounded-xl shadow-sm hover:shadow-md transition duration-300">
-              <div className="w-10 h-10 flex items-center justify-center rounded-full bg-gradient-to-tr from-red-400 to-pink-500 text-white">
-                <svg
-                  className="w-5 h-5"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                >
+            <div className="flex items-start gap-5 p-6 bg-[#0f0f1a]/60 backdrop-blur-lg border border-white/10 rounded-2xl shadow-xl hover:border-pink-500/50 hover:shadow-[0_0_15px_rgba(236,72,153,0.3)] transition-all duration-300 group">
+              <div className="w-14 h-14 flex-shrink-0 flex items-center justify-center rounded-full bg-gradient-to-tr from-pink-500 to-orange-500 text-white shadow-[0_0_10px_rgba(236,72,153,0.5)] group-hover:scale-110 transition-transform duration-300">
+                <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
                   <path d="M10,20A10,10,0,1,0,0,10,10,10,0,0,0,10,20ZM8.711,4.3l5.7,5.766L8.7,15.711,7.3,14.289l4.289-4.242L7.289,5.7Z" />
                 </svg>
               </div>
               <div>
-                <h4 className="text-lg font-semibold text-gray-800">Address</h4>
-                <p className="text-gray-600 text-base leading-relaxed">
-                  JP nagar 9th phase amruthnagar road, opposite to axis bank
+                <h4 className="text-xl font-bold text-white tracking-wide">Address</h4>
+                <p className="text-gray-300 text-base leading-relaxed mt-2">
+                  JP Nagar 9th phase Amruthnagar road, opposite to Axis Bank
                   <br />
                   Bangalore, Pincode 560062
                 </p>
                 <button
-                  onClick={() => {
-                    window.open(
-                      "https://www.google.com/maps?q=12.870583,77.566083",
-                      "_blank"
-                    );
-                  }}
-                  className="px-4 py-2 rounded-lg bg-gradient-to-tr mt-2 items-center justify-center from-red-400 to-pink-500 text-white font-medium shadow-md hover:shadow-lg transition duration-300"
+                  onClick={() => window.open("https://www.google.com/maps?q=12.870583,77.566083", "_blank")}
+                  className="px-6 py-2.5 rounded-lg bg-gradient-to-r from-pink-500 to-orange-500 text-white font-semibold tracking-wide shadow-[0_0_10px_rgba(236,72,153,0.3)] hover:shadow-[0_0_20px_rgba(236,72,153,0.6)] mt-4 transition-all duration-300"
                 >
                   Click Here For Map
                 </button>
@@ -219,44 +200,30 @@ export default function ContactUs() {
             </div>
 
             {/* Email */}
-            <div className="flex items-start gap-4 p-4 bg-gray-50 rounded-xl shadow-sm hover:shadow-md transition duration-300">
-              <div className="w-10 h-10 flex items-center justify-center rounded-full bg-gradient-to-tr from-yellow-400 to-orange-500 text-white">
-                <svg
-                  className="w-5 h-5"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
+            <div className="flex items-center gap-5 p-6 bg-[#0f0f1a]/60 backdrop-blur-lg border border-white/10 rounded-2xl shadow-xl hover:border-cyan-400/50 hover:shadow-[0_0_15px_rgba(34,211,238,0.3)] transition-all duration-300 group">
+              <div className="w-14 h-14 flex-shrink-0 flex items-center justify-center rounded-full bg-gradient-to-tr from-cyan-400 to-blue-500 text-white shadow-[0_0_10px_rgba(34,211,238,0.5)] group-hover:scale-110 transition-transform duration-300">
+                <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M2 4a2 2 0 012-2h16a2 2 0 012 2v16a2 2 0 01-2 2H4a2 2 0 01-2-2V4zm16 2H6v.01L12 13l6-6.99V6z" />
                 </svg>
               </div>
               <div>
-                <h4 className="text-lg font-semibold text-gray-800">Email</h4>
-                <a
-                  href="mailto:ultimategraphics74@gmail.com"
-                  className="text-gray-600 text-base hover:text-black transition duration-200"
-                >
+                <h4 className="text-xl font-bold text-white tracking-wide">Email</h4>
+                <a href="mailto:ultimategraphics74@gmail.com" className="text-gray-300 text-base hover:text-cyan-400 transition duration-300 mt-1 block">
                   ultimategraphics74@gmail.com
                 </a>
               </div>
             </div>
 
             {/* Phone */}
-            <div className="flex items-start gap-4 p-4 bg-gray-50 rounded-xl shadow-sm hover:shadow-md transition duration-300">
-              <div className="w-10 h-10 flex items-center justify-center rounded-full bg-gradient-to-tr from-blue-500 to-indigo-500 text-white">
-                <svg
-                  className="w-5 h-5"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
+            <div className="flex items-center gap-5 p-6 bg-[#0f0f1a]/60 backdrop-blur-lg border border-white/10 rounded-2xl shadow-xl hover:border-purple-500/50 hover:shadow-[0_0_15px_rgba(168,85,247,0.3)] transition-all duration-300 group">
+              <div className="w-14 h-14 flex-shrink-0 flex items-center justify-center rounded-full bg-gradient-to-tr from-purple-500 to-indigo-500 text-white shadow-[0_0_10px_rgba(168,85,247,0.5)] group-hover:scale-110 transition-transform duration-300">
+                <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M17 1H7C5.897 1 5 1.897 5 3v18c0 1.103.897 2 2 2h10c1.103 0 2-.897 2-2V3c0-1.103-.897-2-2-2zM12 21c-.553 0-1-.447-1-1s.447-1 1-1 1 .447 1 1-.447 1-1 1zm5-4H7V4h10v13z" />
                 </svg>
               </div>
               <div>
-                <h4 className="text-lg font-semibold text-gray-800">Phone</h4>
-                <a
-                  href="tel:+918050093019"
-                  className="text-gray-600 text-base hover:text-black transition duration-200"
-                >
+                <h4 className="text-xl font-bold text-white tracking-wide">Phone</h4>
+                <a href="tel:+918050093019" className="text-gray-300 text-base hover:text-purple-400 transition duration-300 mt-1 block">
                   +91 8050093019
                 </a>
               </div>
@@ -266,7 +233,7 @@ export default function ContactUs() {
           {/* Contact Form */}
           <section
             id="contact"
-            className="bg-white rounded-lg shadow-lg p-6 sm:p-8 transition-all duration-300 transform hover:scale-105"
+            className="bg-[#0f0f1a]/60 backdrop-blur-xl border border-white/10 rounded-2xl shadow-2xl p-8 sm:p-10 transition-all duration-300 hover:shadow-[0_0_30px_rgba(255,255,255,0.05)]"
           >
             <form
               ref={form}
@@ -274,10 +241,7 @@ export default function ContactUs() {
               className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left"
             >
               <div className="md:col-span-2">
-                <label
-                  htmlFor="name"
-                  className="block mb-2 font-semibold text-gray-700"
-                >
+                <label htmlFor="name" className="block mb-2 text-sm font-semibold text-gray-300 uppercase tracking-widest">
                   Full Name
                 </label>
                 <input
@@ -286,16 +250,13 @@ export default function ContactUs() {
                   type="text"
                   required
                   placeholder="Your Name"
-                  className="w-full px-5 py-3 rounded-lg bg-gray-100 text-black"
+                  className="w-full px-5 py-4 rounded-xl bg-black/40 border border-white/10 text-white placeholder-gray-500 focus:outline-none focus:border-pink-500 focus:ring-1 focus:ring-pink-500 transition-colors"
                   suppressHydrationWarning
                 />
               </div>
 
               <div>
-                <label
-                  htmlFor="email"
-                  className="block mb-2 font-semibold text-gray-700"
-                >
+                <label htmlFor="email" className="block mb-2 text-sm font-semibold text-gray-300 uppercase tracking-widest">
                   Email
                 </label>
                 <input
@@ -304,16 +265,13 @@ export default function ContactUs() {
                   type="email"
                   required
                   placeholder="you@example.com"
-                  className="w-full px-5 py-3 rounded-lg bg-gray-100 text-black"
+                  className="w-full px-5 py-4 rounded-xl bg-black/40 border border-white/10 text-white placeholder-gray-500 focus:outline-none focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 transition-colors"
                   suppressHydrationWarning
                 />
               </div>
 
               <div>
-                <label
-                  htmlFor="phone"
-                  className="block mb-2 font-semibold text-gray-700"
-                >
+                <label htmlFor="phone" className="block mb-2 text-sm font-semibold text-gray-300 uppercase tracking-widest">
                   Mobile Number
                 </label>
                 <input
@@ -322,16 +280,13 @@ export default function ContactUs() {
                   type="tel"
                   required
                   placeholder="+91 9999900000"
-                  className="w-full px-5 py-3 rounded-lg bg-gray-100 text-black"
+                  className="w-full px-5 py-4 rounded-xl bg-black/40 border border-white/10 text-white placeholder-gray-500 focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-colors"
                   suppressHydrationWarning
                 />
               </div>
 
               <div>
-                <label
-                  htmlFor="location"
-                  className="block mb-2 font-semibold text-gray-700"
-                >
+                <label htmlFor="location" className="block mb-2 text-sm font-semibold text-gray-300 uppercase tracking-widest">
                   Business Location
                 </label>
                 <input
@@ -340,16 +295,13 @@ export default function ContactUs() {
                   type="text"
                   required
                   placeholder="Business Location"
-                  className="w-full px-5 py-3 rounded-lg bg-gray-100 text-black"
+                  className="w-full px-5 py-4 rounded-xl bg-black/40 border border-white/10 text-white placeholder-gray-500 focus:outline-none focus:border-orange-500 focus:ring-1 focus:ring-orange-500 transition-colors"
                   suppressHydrationWarning
                 />
               </div>
 
               <div>
-                <label
-                  htmlFor="city"
-                  className="block mb-2 font-semibold text-gray-700"
-                >
+                <label htmlFor="city" className="block mb-2 text-sm font-semibold text-gray-300 uppercase tracking-widest">
                   City
                 </label>
                 <input
@@ -358,16 +310,13 @@ export default function ContactUs() {
                   type="text"
                   required
                   placeholder="Your City Name"
-                  className="w-full px-5 py-3 rounded-lg bg-gray-100 text-black"
+                  className="w-full px-5 py-4 rounded-xl bg-black/40 border border-white/10 text-white placeholder-gray-500 focus:outline-none focus:border-pink-500 focus:ring-1 focus:ring-pink-500 transition-colors"
                   suppressHydrationWarning
                 />
               </div>
 
               <div className="md:col-span-2">
-                <label
-                  htmlFor="subject"
-                  className="block mb-2 font-semibold text-gray-700"
-                >
+                <label htmlFor="subject" className="block mb-2 text-sm font-semibold text-gray-300 uppercase tracking-widest">
                   Subject
                 </label>
                 <input
@@ -375,16 +324,13 @@ export default function ContactUs() {
                   id="subject"
                   type="text"
                   placeholder="Subject (optional)"
-                  className="w-full px-5 py-3 rounded-lg bg-gray-100 text-black"
+                  className="w-full px-5 py-4 rounded-xl bg-black/40 border border-white/10 text-white placeholder-gray-500 focus:outline-none focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 transition-colors"
                   suppressHydrationWarning
                 />
               </div>
 
               <div className="md:col-span-2">
-                <label
-                  htmlFor="message"
-                  className="block mb-2 font-semibold text-gray-700"
-                >
+                <label htmlFor="message" className="block mb-2 text-sm font-semibold text-gray-300 uppercase tracking-widest">
                   Message
                 </label>
                 <textarea
@@ -393,14 +339,14 @@ export default function ContactUs() {
                   rows={5}
                   required
                   placeholder="Type your message..."
-                  className="w-full px-5 py-3 rounded-lg bg-gray-100 text-black resize-none"
+                  className="w-full px-5 py-4 rounded-xl bg-black/40 border border-white/10 text-white placeholder-gray-500 focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-colors resize-none"
                 />
               </div>
 
-              <div className="md:col-span-2">
+              <div className="md:col-span-2 mt-4">
                 <button
                   type="submit"
-                  className="w-full bg-blue-600 text-white font-semibold py-3 rounded-lg hover:bg-blue-700 transition duration-300"
+                  className="w-full bg-gradient-to-r from-cyan-400 via-pink-500 to-orange-500 text-white font-extrabold tracking-widest uppercase py-4 rounded-xl shadow-[0_0_15px_rgba(236,72,153,0.4)] hover:shadow-[0_0_25px_rgba(236,72,153,0.8)] hover:scale-[1.02] transition-all duration-300"
                   suppressHydrationWarning
                 >
                   Send Message

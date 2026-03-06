@@ -8,26 +8,26 @@ import Image from "next/image";
 import Link from "next/link";
 
 const services = [
-  { title: "Vehicle Branding", image: "img(25).jpg" },
-  { title: "Cabinet Signs", image: "img(10).jpg" },
-  { title: "Station Signs", image: "img(36).jpg" },
-  { title: "Neon Signs", image: "img(32).jpg" },
-  { title: "Digital Signage", image: "img(37).jpeg" },
-  { title: "Directional Signs", image: "img(1).jpg" },
-  { title: "Custom Signs", image: "img(26).jpg" },
-  { title: "Engraved Signs", image: "img(3).jpg" },
-  { title: "Metal Laser", image: "img(39).jpeg" },
-  { title: "CNC Router", image: "img(38).jpeg" },
-  { title: "Channel Letter", image: "img(41).jpg" },
-  { title: "Metal Letters", image: "img(42).jpeg" },
-  { title: "Printing", image: "img(43).jpg" },
-  { title: "Plotting", image: "img(44).jpg" },
-  { title: "Glass Frosting", image: "img(45).jpeg" },
-  { title: "Vinyl Banners", image: "img(46).jpg" },
-  { title: "Stickering", image: "img(47).jpeg" },
-  { title: "Vehicle Stickering", image: "img(48).jpg" },
-  { title: "Sun Board Printing", image: "img(49).jpg" },
-  { title: "Business Card Printing", image: "img(50).jpg" },
+  { title: "Vehicle Branding", image: "/img(25).jpg" },
+  { title: "Cabinet Signs", image: "/img(10).jpg" },
+  { title: "Station Signs", image: "/img(36).jpg" },
+  { title: "Neon Signs", image: "/img(32).jpg" },
+  { title: "Digital Signage", image: "/img(37).jpeg" },
+  { title: "Directional Signs", image: "/img(1).jpg" },
+  { title: "Custom Signs", image: "/img(26).jpg" },
+  { title: "Engraved Signs", image: "/img(3).jpg" },
+  { title: "Metal Laser", image: "/img(39).jpeg" },
+  { title: "CNC Router", image: "/img(38).jpeg" },
+  { title: "Channel Letter", image: "/img(41).jpg" },
+  { title: "Metal Letters", image: "/img(42).jpeg" },
+  { title: "Printing", image: "/img(43).jpg" },
+  { title: "Plotting", image: "/img(44).jpg" },
+  { title: "Glass Frosting", image: "/img(45).jpeg" },
+  { title: "Vinyl Banners", image: "/img(46).jpg" },
+  { title: "Stickering", image: "/img(47).jpeg" },
+  { title: "Vehicle Stickering", image: "/img(48).jpg" },
+  { title: "Sun Board Printing", image: "/img(49).jpg" },
+  { title: "Business Card Printing", image: "/img(50).jpg" },
 ];
 
 export default function ServicesClient() {
@@ -65,14 +65,8 @@ export default function ServicesClient() {
       />
 
       <div
-        className="text-gray-800 dark:bg-dark1 dark:text-black min-h-screen"
-        style={{
-          backgroundImage: "url('/background.jpg')",
-          backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
-          backgroundPosition: "center",
-        }}
-      >
+      className="bg-transparent text-gray-800 dark:bg-transparent dark:text-black min-h-screen"
+    >
         {/* Navbar */}
         <nav className="bg-black text-white px-4 sm:px-6 py-4 flex items-center justify-between shadow-md fixed top-0 left-0 w-full z-50 dark:bg-dark2">
           {/* Logo */}
@@ -171,7 +165,7 @@ export default function ServicesClient() {
         </div>
 
         {/* Services Grid Section */}
-        <section className="py-12 px-4 sm:px-10 lg:px-20 dark:bg-dark1">
+        <section className="py-12 px-4 sm:px-10 lg:px-20 bg-transparent dark:bg-transparent">
           <h1 className="text-5xl font-extrabold text-center mt-6 mb-10 leading-tight uppercase tracking-wide font-sans gradient-glow-text animate-pulseSlow">
             Our Signage Services
           </h1>

@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import React from "react";
+import Script from "next/script";
 import { ReduxProvider } from "./app/ReduxProvider"; // import the provider
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://ultimategraphicsindia.in"),
   title:
     "Ultimate Graphics Bangalore | Custom Signage, LED Signs & Graphic Design Services",
   description:
@@ -92,7 +94,53 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body>
+      <head>
+        {/* Google Tag Manager */}
+        <Script
+          id="google-tag-manager"
+          strategy="lazyOnload"
+          dangerouslySetInnerHTML={{
+            __html: `
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-K4F5KF35');
+            `,
+          }}
+        />
+        {/* End Google Tag Manager */}
+        {/* Google tag (gtag.js) */}
+        <Script
+          strategy="lazyOnload"
+          src="https://www.googletagmanager.com/gtag/js?id=G-2G0J7LZZGJ"
+        />
+        <Script
+          id="google-analytics"
+          strategy="lazyOnload"
+          dangerouslySetInnerHTML={{
+            __html: `
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-2G0J7LZZGJ');
+            `,
+          }}
+        />
+      </head>
+      <body className="antialiased">
+        <div className="deep-space-container" />
+        {/* Google Tag Manager (noscript) */}
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-K4F5KF35"
+            height="0"
+            width="0"
+            style={{ display: "none", visibility: "hidden" }}
+          ></iframe>
+        </noscript>
+        {/* End Google Tag Manager (noscript) */}
         <ReduxProvider>{children}</ReduxProvider>
       </body>
     </html>

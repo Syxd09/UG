@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import { motion } from "framer-motion";
 import "animate.css";
 import { useEffect, useState } from "react";
 import {
@@ -14,109 +15,109 @@ import {
 export default function GalleryModal() {
   const images = [
     {
-      src: "img(3).jpg",
+      src: "/img(3).jpg",
       title: "Backlit Sign",
       description: "Custom signage with LED glow for premium look.",
       classname: "animate__animated animate__fadeInUp animate__delay-1s",
     },
     {
-      src: "img(17).jpg",
+      src: "/img(17).jpg",
       title: "Neon Art",
       description: "Café-inspired neon wall art.",
       classname: "animate__animated animate__fadeInUp animate__delay-2s",
     },
     {
-      src: "img(10).jpg",
+      src: "/img(10).jpg",
       title: "Office Branding",
       description: "Corporate space with branded signage.",
       classname: "animate__animated animate__fadeInUp animate__delay-3s",
     },
     {
-      src: "img(24).jpg",
+      src: "/img(24).jpg",
       title: "Creative Concept",
       description: "Bold concepts for your business identity.",
       classname: "animate__animated animate__fadeInUp animate__delay-5s",
     },
     {
-      src: "img(1).jpg",
+      src: "/img(1).jpg",
       title: "Pylon Sign",
       description: "Eye-catching outdoor pylon signage.",
       classname: "animate__animated animate__fadeInUp animate__delay-3s",
     },
     {
-      src: "img(13).jpg",
+      src: "/img(13).jpg",
       title: "Directional Board",
       description: "Elegant and functional directional signs.",
       classname: "animate__animated animate__fadeInUp animate__delay-4s",
     },
     {
-      src: "img(34).jpg",
+      src: "/img(34).jpg",
       title: "Office Directional Board",
       description: "simple and functional directional signs.",
       classname: "animate__animated animate__fadeInUp animate__delay-7s",
     },
     {
-      src: "img(8).jpg",
+      src: "/img(8).jpg",
       title: "Avertisement Board",
       description: "Promotional signage for events.",
       classname: "animate__animated animate__fadeInUp animate__delay-10s",
     },
     {
-      src: "img(4).jpg",
+      src: "/img(4).jpg",
       title: "Office Sign Board",
       description: "Professional office sign board.",
       classname: "animate__animated animate__fadeInUp animate__delay-2s",
     },
     {
-      src: "img(7).jpg",
+      src: "/img(7).jpg",
       title: "cardboard standees",
       description: "Custom cardboard standees for events.",
       classname: "animate__animated animate__fadeInUp animate__delay-8s",
     },
     {
-      src: "img(6).jpg",
+      src: "/img(6).jpg",
       title: "Shop Signage",
       description: "Stylish shop signage for retail spaces.",
       classname: "animate__animated animate__fadeInUp animate__delay-5s",
     },
     {
-      src: "img(18).jpg",
+      src: "/img(18).jpg",
       title: "Retail Signage",
       description: "Modern retail signage with vibrant colors.",
       classname: "animate__animated animate__fadeInUp animate__delay-9s",
     },
     {
-      src: "img(15).jpg",
+      src: "/img(15).jpg",
       title: "Retail Signage",
       description: "Modern retail signage with vibrant colors.",
       classname: "animate__animated animate__fadeInUp animate__delay-5s",
     },
     {
-      src: "img(21).jpg",
+      src: "/img(21).jpg",
       title: "Office interior Signage",
       description: "Elegant office interior signage.",
       classname: "animate__animated animate__fadeInUp animate__delay-1s",
     },
     {
-      src: "img(22).jpg",
+      src: "/img(22).jpg",
       title: "Directional Signage",
       description: "Clear and concise directional signage.",
       classname: "animate__animated animate__fadeInUp animate__delay-6s",
     },
     {
-      src: "img(30).jpg",
+      src: "/img(30).jpg",
       title: "Company Reception Signage",
       description: "Sleek reception signage for corporate spaces.",
       classname: "animate__animated animate__fadeInUp animate__delay-9s",
     },
     {
-      src: "img(26).jpg",
+      src: "/img(26).jpg",
       title: "Custom Signage",
       description: "Tailored signage solutions for your brand.",
       classname: "animate__animated animate__fadeInUp animate__delay-7s",
     },
     {
-      src: "img(25).jpg",
+      src: "/img(25).jpg",
       title: "Vehicle Branding And Advertisement",
       description: "Mobile advertising with vehicle branding.",
       classname: "animate__animated animate__fadeInUp animate__delay-10s",
@@ -217,28 +218,40 @@ export default function GalleryModal() {
     <>
       {/* Gallery grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 px-4 sm:px-16 mt-10">
-        {images.map((img, i) => (
-          <div
-            key={i}
-            onClick={() => openModal(i)}
-            className={`relative overflow-hidden rounded-lg shadow-lg cursor-pointer group ${
-              img.classname || ""
-            }`}
-          >
-            <Image
-              src={img.src}
-              alt={img.title}
-              width={600}
-              height={400}
-              className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
-            />
-            <div className="absolute inset-0 bg-black bg-opacity-25 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              <span className="text-white text-lg font-semibold">
-                {img.title}
-              </span>
-            </div>
-          </div>
-        ))}
+        {images.map((img, i) => {
+          // Calculate delay based on row index for desktop (3 items per row)
+          // On mobile, they will just load sequentially or all at once gracefully
+          const desktopDelay = Math.floor(i / 3) * 0.2;
+          
+          return (
+            <motion.div
+              key={i}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-50px" }}
+              transition={{
+                duration: 0.5,
+                delay: typeof window !== 'undefined' && window.innerWidth >= 768 ? desktopDelay : 0.1,
+                ease: "easeOut"
+              }}
+              onClick={() => openModal(i)}
+              className="relative overflow-hidden rounded-lg shadow-lg cursor-pointer group"
+            >
+              <Image
+                src={img.src}
+                alt={img.title}
+                width={600}
+                height={400}
+                className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-black bg-opacity-25 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <span className="text-white text-lg font-semibold text-center px-4 drop-shadow-md">
+                  {img.title}
+                </span>
+              </div>
+            </motion.div>
+          );
+        })}
       </div>
 
       {/* Modal */}

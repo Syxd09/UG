@@ -10,13 +10,7 @@ export default function Gallery() {
 
   return (
     <div
-      className="bg-white text-gray-800 dark:bg-dark1 dark:text-black min-h-screen"
-      style={{
-        backgroundImage: "url('/background.jpg')",
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
-        backgroundPosition: "center",
-      }}
+      className="bg-transparent text-gray-800 dark:bg-transparent dark:text-black min-h-screen"
     >
       {/* Navbar */}
       <nav className="bg-black text-white px-4 sm:px-6 py-4 flex items-center justify-between shadow-md fixed top-0 left-0 w-full z-50 dark:bg-dark2">
@@ -116,7 +110,7 @@ export default function Gallery() {
       </div>
 
       {/* photo section */}
-      <section className="bg-white dark:bg-dark1 py-20" style={{ backgroundImage: "url('/background.jpg')", backgroundSize: 'cover' }}>
+      <section className="bg-transparent dark:bg-transparent py-20">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-5xl font-extrabold text-center mt-2 mb-4 leading-tight uppercase tracking-wide font-sans gradient-glow-text animate-pulseSlow">
             Our Gallery

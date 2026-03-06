@@ -213,9 +213,9 @@ export default function UltimateGraphicsHomepage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
 
-      <main className="min-h-screen bg-white">
+      <main className="min-h-screen bg-transparent">
         {/* Hero Section */}
-        <section className="bg-gradient-to-br from-blue-900 to-blue-700 text-white py-20">
+        <section className="bg-transparent text-white py-20">
           <div className="container mx-auto px-6">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
@@ -261,7 +261,7 @@ export default function UltimateGraphicsHomepage() {
         </section>
 
         {/* Services Section */}
-        <section className="py-20 bg-gray-50" id="services">
+        <section className="py-20 bg-transparent" id="services">
           <div className="container mx-auto px-6">
             <div className="text-center mb-16">
               <h2 className="text-4xl font-bold text-gray-900 mb-4">
@@ -300,7 +300,7 @@ export default function UltimateGraphicsHomepage() {
         </section>
 
         {/* Why Choose Us Section */}
-        <section className="py-20 bg-white">
+        <section className="py-20 bg-transparent">
           <div className="container mx-auto px-6">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
@@ -366,7 +366,7 @@ export default function UltimateGraphicsHomepage() {
         </section>
 
         {/* Location & Contact Section */}
-        <section className="py-20 bg-gray-50" id="contact">
+        <section className="py-20 bg-transparent" id="contact">
           <div className="container mx-auto px-6">
             <div className="text-center mb-16">
               <h2 className="text-4xl font-bold text-gray-900 mb-4">
@@ -517,7 +517,7 @@ export default function UltimateGraphicsHomepage() {
         </section>
 
         {/* FAQ Section */}
-        <section className="py-20 bg-white">
+        <section className="py-20 bg-transparent">
           <div className="container mx-auto px-6">
             <div className="text-center mb-16">
               <h2 className="text-4xl font-bold text-gray-900 mb-4">

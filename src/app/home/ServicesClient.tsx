@@ -9,13 +9,7 @@ export default function Home() {
 
   return (
     <div
-      className="bg-white text-gray-800 dark:bg-dark1 dark:text-black min-h-screen"
-      style={{
-        backgroundImage: "url('/background.jpg')",
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
-        backgroundPosition: "center",
-      }}
+      className="bg-transparent text-gray-800 dark:bg-transparent dark:text-black min-h-screen"
     >
       {/* Navbar */}
       <nav className="bg-black text-white px-4 sm:px-6 py-4 flex items-center justify-between shadow-md fixed top-0 left-0 w-full z-50 dark:bg-dark2">
@@ -37,19 +31,19 @@ export default function Home() {
         <div className="hidden md:flex items-center gap-4 text-sm sm:text-base">
           <Link
             href="/about"
-            className="whitespace-nowrap px-5 py-2 rounded-lg border border-white hover:bg-white hover:text-black transition-all duration-300 text-sm md:text-base font-extrabold uppercase tracking-wide font-sans gradient-glow-text animate-pulseSlow"
+            className="whitespace-nowrap px-5 py-2 rounded-lg border border-white hover:bg-white hover:text-black transition-all duration-300 text-sm md:text-base font-extrabold uppercase tracking-wide font-sans gradient-glow-text"
           >
             About
           </Link>
           <Link
             href="/services"
-            className="whitespace-nowrap px-5 py-2 rounded-lg border border-white hover:bg-white hover:text-black transition-all duration-300 text-sm md:text-base font-extrabold uppercase tracking-wide font-sans gradient-glow-text animate-pulseSlow"
+            className="whitespace-nowrap px-5 py-2 rounded-lg border border-white hover:bg-white hover:text-black transition-all duration-300 text-sm md:text-base font-extrabold uppercase tracking-wide font-sans gradient-glow-text"
           >
             Services
           </Link>
           <Link
             href="/gallery"
-            className="whitespace-nowrap px-5 py-2 rounded-lg border border-white hover:bg-white hover:text-black transition-all duration-300 text-sm md:text-base font-extrabold uppercase tracking-wide font-sans gradient-glow-text animate-pulseSlow"
+            className="whitespace-nowrap px-5 py-2 rounded-lg border border-white hover:bg-white hover:text-black transition-all duration-300 text-sm md:text-base font-extrabold uppercase tracking-wide font-sans gradient-glow-text"
           >
             Gallery
           </Link>
@@ -111,44 +105,67 @@ export default function Home() {
       <section className="relative bg-black/50 text-white py-24 px-4 sm:px-6 md:px-16 mt-0 flex justify-center items-center">
         <div className="max-w-screen-xl mx-auto flex flex-col md:flex-row items-center justify-between gap-12 w-full">
           {/* Text Content */}
-          <div className="flex-1 text-center md:text-left space-y-6 animate__animated animate__fadeInLeft">
+          <motion.div 
+            initial={{ opacity: 0, x: -50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            className="flex-1 text-center md:text-left space-y-6"
+          >
             <h1
-              className="text-5xl sm:text-6xl md:text-7xl font-extrabold leading-tighter uppercase tracking-wide font-sans gradient-glow-text animate-pulseSlow animate__delay-10s"
+              className="text-5xl sm:text-6xl md:text-7xl font-extrabold leading-tighter uppercase tracking-wide font-sans gradient-glow-text"
               style={{ lineHeight: "1.1" }}
             >
               Reshaping Your
               <br /> Business Boards
             </h1>
-            <p className="text-lg sm:text-xl md:text-2xl text-gray-300 max-w-lg mx-auto md:mx-0 leading-relaxed animate__animated animate__fadeInUp animate__delay-2s">
-              Discover the latest trends and techniques in signage designs.
-            </p>
-            {/* Use Next.js Link component */}
-            <Link
-              href="/contact-us"
-              className="inline-block whitespace-nowrap px-5 py-2 rounded-lg border border-white  text-sm md:text-base font-extrabold leading-tighter uppercase tracking-wide font-sans gradient-glow-text animate-pulseSlow animate__delay-4s"
+            <motion.p 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
+              className="text-lg sm:text-xl md:text-2xl text-gray-300 max-w-lg mx-auto md:mx-0 leading-relaxed"
             >
-              Contact Us
-            </Link>
-          </div>
+              Discover the latest trends and techniques in signage designs.
+            </motion.p>
+            {/* Use Next.js Link component */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.4, ease: "easeOut" }}
+            >
+              <Link
+                href="/contact-us"
+                className="inline-block whitespace-nowrap px-5 py-2 rounded-lg border border-white text-sm md:text-base font-extrabold leading-tighter uppercase tracking-wide font-sans gradient-glow-text"
+              >
+                Contact Us
+              </Link>
+            </motion.div>
+          </motion.div>
 
           {/* Image Content */}
-          <div className="flex-1 max-w-xl sm:max-w-2xl md:max-w-3xl mx-auto md:mx-0 md:-ml-40 animate__animated animate__zoomIn animate__delay-2s">
+          <motion.div 
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
+            className="flex-1 max-w-xl sm:max-w-2xl md:max-w-3xl mx-auto md:mx-0 md:-ml-40"
+          >
             {/* Use Next.js Image component */}
             <Image
               src="/graphics.png"
               alt="Futuristic 3D Art"
               width={600}
               height={400}
+              priority
+              fetchPriority="high"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               className="w-full h-auto"
-            />{" "}
-            {/* Added width and height, adjust as needed */}
-          </div>
+            />
+          </motion.div>
         </div>
       </section>
 
       {/* Working Hours Section */}
       <section className="bg-transparent text-white py-16 px-4 sm:px-6 md:px-16 text-center">
-        <div className="w-full h-1 bg-gradient-to-r from-purple-400 via-pink-500 to-purple-400 mb-10 rounded-full animate-pulseSlow"></div>
+        <div className="w-full h-1 bg-gradient-to-r from-purple-400 via-pink-500 to-purple-400 mb-10 rounded-full"></div>
         <div className="max-w-4xl mx-auto flex flex-col md:flex-row justify-center items-center gap-16 md:gap-40 text-center">
           {/* Working Days */}
           <div>
@@ -169,14 +186,20 @@ export default function Home() {
             <p className="text-lg tracking-wide">10:00 PM</p>
           </div>
         </div>
-        <div className="w-full h-1 bg-gradient-to-r from-purple-400 via-pink-500 to-purple-400 mt-10 rounded-full animate-pulseSlow"></div>
+        <div className="w-full h-1 bg-gradient-to-r from-purple-400 via-pink-500 to-purple-400 mt-10 rounded-full"></div>
       </section>
 
       {/* Innovation Section */}
-      <section className="relative py-20 px-4 sm:px-6 bg-transparent text-center max-w-4xl mx-auto">
+      <motion.section 
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: "-100px" }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+        className="relative py-20 px-4 sm:px-6 bg-transparent text-center max-w-4xl mx-auto"
+      >
         {/* Heading */}
         <h2
-          className="text-5xl font-extrabold tracking-wide mb-6 gradient-glow-text drop-shadow-lg leading-tight animate-pulseSlow"
+          className="text-5xl font-extrabold tracking-wide mb-6 gradient-glow-text drop-shadow-lg leading-tight"
           style={{ lineHeight: "1.1" }}
         >
           DIMENSIONS OF INNOVATION
@@ -195,14 +218,20 @@ export default function Home() {
         </p>
 
         {/* Animated divider line */}
-        <div className="w-3/4 h-1 mx-auto mt-12 bg-gradient-to-r from-pink-500 via-purple-500 to-pink-500 animate-pulse rounded-full shadow-glow"></div>
-      </section>
+        <div className="w-3/4 h-1 mx-auto mt-12 bg-gradient-to-r from-pink-500 via-purple-500 to-pink-500 rounded-full shadow-glow"></div>
+      </motion.section>
 
       {/* Designer Profile Section */}
       <section className="bg-transparent py-16 px-4 sm:px-6 max-w-5xl mx-auto">
         <div className="flex flex-col items-center md:flex-row gap-10 text-center md:text-left">
           {/* Profile Image */}
-          <div className="flex-shrink-0 animate-floatUp">
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+            className="flex-shrink-0"
+          >
             {/* Use Next.js Image component */}
             <Image
               src="/shazeem.png"
@@ -211,7 +240,7 @@ export default function Home() {
               height={256} /* h-64 is 256px */
               className="rounded-full w-64 h-64 object-cover shadow-lg border-4 border-white"
             />
-          </div>
+          </motion.div>
           {/* Profile Info */}
           <div>
             <h2
