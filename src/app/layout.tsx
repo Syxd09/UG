@@ -77,7 +77,7 @@ export const metadata: Metadata = {
     },
   },
   verification: {
-    google: "your-google-verification-code",
+    google: "qrH0tJ4-EkZ-tA-cJV77hvjFn2of6kN64lRCPBhhEpU",
   },
   other: {
     "geo.region": "IN-KA",
